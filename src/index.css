@@ -1,13 +1,85 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Arial", sans-serif;
+  background: url("https://example.com/your-background-image.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.text {
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+  height: 28px;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.text::placeholder {
+  color: #fff;
+}
+
+.option {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.option > select {
+  height: 35px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem;
+  background: #ffcc00;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.paragraph {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #ffcc00;
+  text-align: center;
+}
+
+span {
+  height: 20px;
+  width: 10%;
+  display: inline-block;
 }
